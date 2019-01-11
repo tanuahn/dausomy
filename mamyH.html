@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript function to check whether a given value is US zip code or not</title>
+</head>
+<body>
+<script>
+    function is_usZipCode(str) {
+        regexp = /^[0-9]{5}(?:-[0-9]{4})?$/;
+        if (regexp.test(str)) {
+            return true;
+        }
+        return false;
+    }
+    var zipcode = parseInt(prompt("Nhap so:"));
+    if (is_usZipCode(zipcode)){
+        alert("Day la dau so My")
+    } else {
+        alert("Day khong phai la dau so My")
+    }
+</script>
+</body>
+</html>
